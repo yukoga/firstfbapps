@@ -5,7 +5,7 @@ var fcgiApp = require("./fcgi"),
 var myServer = http.createServer(function(req, res) {
 	setTimeout(function() {
 		res.writeHead(200, {"Content-type": "text/html"});
-		res.end("It works!" + Date.now());
+		res.end("It works!" + Date.now() + "<br />This is my first FB apps!!");
 		console.log("Wrote response.");
 	}, 1000);
 	//throw new Error("Bollocks.");
